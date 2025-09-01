@@ -1,0 +1,97 @@
+/* Top Bar */
+.top-bar {
+  background: #a9aeb3; /* light gray */
+  color: #333;
+  font-size: 0.9rem;
+}
+
+/* Navbar */
+.custom-nav {
+  position: sticky;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+}
+
+.custom-nav .nav-link {
+  color: #fff !important;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.custom-nav .nav-link:hover {
+  color: #ffcc00 !important;
+}
+
+/* Search box */
+.navbar form .form-control {
+  border-radius: 20px;
+  padding: 0.25rem 0.75rem;
+}
+
+.navbar form .btn {
+  border-radius: 50%;
+  padding: 0.25rem 0.5rem;
+}
+
+/* Dropdown general */
+.dropdown-menu {
+  min-width: 180px;
+}
+.dropdown-item {
+  font-size: 0.9rem;
+}
+
+/* Mobile-friendly dropdown (full-width) */
+@media (max-width: 767.98px) {
+  .dropdown-menu {
+    position: static;
+    float: none;
+    width: 100%;
+    margin-top: 0.5rem;
+    border-radius: 0.5rem;
+  }
+  .dropdown-menu .dropdown-item {
+    padding: 0.75rem 1rem;
+  }
+}
+
+/* Fix overlap with fixed header */
+body {
+  padding-top: 120px; /* adjust if header height changes */
+}
+
+
+/* Hero Carousel Styling */
+
+.bg-hero {
+  background-color: #bd8d35;
+}
+
+.hero-carousel .hero-slide {
+  position: relative;
+  height: 50vh; /* full screen height */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-carousel .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* dark overlay so text is visible */
+}
+
+.hero-carousel .text-box {
+  position: relative;
+  max-width: 600px;
+  z-index: 2;
+}
+
+/* Menu Styles */
+  .menu-img {
+    height: 200px;
+    object-fit: cover;
+  }
+
+  
+
