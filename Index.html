@@ -1,0 +1,1321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EATWITJAY</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- FontAwesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Owl Carousel CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Header Wrapper (fixed: top bar + navbar together) -->
+<header class="fixed-top shadow-sm">
+  <!-- Top Bar -->
+  <div class="top-bar d-flex justify-content-between align-items-center px-3 py-2 bg-white">
+    <!-- Logo + Name -->
+    <div class="d-flex align-items-center">
+      <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1756735679/eatwitjay_a1t08o.png" 
+           alt="Logo" height="50" class="me-2">
+      <span class="fs-5 fw-bold text-dark">EATWITJAY</span>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="contact-info d-flex align-items-center flex-wrap text-dark">
+      <!-- Address (hidden on small screens, visible md and up) -->
+      <span class="me-3 d-none d-md-inline">
+        <i class="fas fa-map-marker-alt me-1"></i> 24 School Road, Umuahia
+      </span>
+
+      <!-- Phone (always visible) -->
+      <span>
+        <i class="fas fa-phone me-1"></i>
+        <a href="tel:+2347039280073" class="text-dark text-decoration-none">
+          +234 703 928 0073
+        </a>
+      </span>
+    </div>
+  </div>
+
+  <!-- Navigation (inside header, so it’s fixed too) -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <!-- Hamburger -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+
+
+      <!-- Nav Links -->
+      <div class="collapse navbar-collapse" id="mainNav">
+        <!-- Left Nav -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-lg-3">
+          <li class="nav-item">
+            <a class="nav-link active" href="#"><i class="fas fa-home me-1"></i> Home</a>
+          </li>
+
+          <!-- Account Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="accountDropdown" role="button" data-bs-toggle="dropdown">
+              <i class="fas fa-user me-1"></i> Account
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="accountDropdown">
+              <li><a class="dropdown-item" href="#">Login</a></li>
+              <li><a class="dropdown-item" href="#">Register</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">My Profile</a></li>
+              <li><a class="dropdown-item" href="#">Logout</a></li>
+            </ul>
+          </li>
+
+          <!-- Menu Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="menuDropdown" role="button" data-bs-toggle="dropdown">
+              <i class="fas fa-utensils me-1"></i> Menu
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="menuDropdown">
+              <li><a class="dropdown-item" href="#featuredRestaurants">Featured Restaurants</a></li>
+              <li><a class="dropdown-item" href="#Foodmenu">Food Menu</a></li>
+              <li><a class="dropdown-item" href="#drinks">Drinks</a></li>
+              <li><a class="dropdown-item" href="#swallows">Swallows</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#offers"><i class="fas fa-tags me-1"></i> Offers</a></li>
+        </ul>
+
+
+
+        <!-- Search Form (Right End) -->
+        <form class="d-flex ms-auto mt-2 mt-lg-0" role="search">
+          <input class="form-control form-control-sm me-2" type="search" placeholder="Search..." aria-label="Search">
+          <button class="btn btn-sm btn-light" type="submit"><i class="fas fa-search"></i></button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+
+
+<!-- HERO SECTION -->
+<section class="hero-carousel owl-carousel owl-theme">
+
+  <!-- Slide 1 (Text Left) -->
+  <div class="hero-slide text-left" style="background-image: url('https://res.cloudinary.com/dkoeutxie/image/upload/v1756752791/360_F_187860162_hWCup6TWAbKwOzS3sKxkn2ZDZmGxZA47_rekbum.jpg');">
+    <div class="overlay"></div>
+    <div class="container h-100 d-flex align-items-center">
+      <div class="text-box text-start">
+        <span class="badge bg-danger mb-3">20% OFF</span>
+        <h1 class="fw-bold display-4 text-white">Best Offer, Tasty Food</h1>
+        <p class="lead text-white">Open Daily: 9:00 AM – 11:00 PM</p>
+        <p class="lead text-white">Free home delivery on orders above ₦7000</p>
+        <a href="#" class="btn btn-warning btn-lg mt-3">Order Now</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide 2 (Text Center) -->
+  <div class="hero-slide text-center" style="background-image: url('https://res.cloudinary.com/dkoeutxie/image/upload/v1756752800/360_F_758266271_yksdY7RLYIIY6jofjJorjylEDOvgcuze_xyleem.jpg');">
+    <div class="overlay"></div>
+    <div class="container h-100 d-flex align-items-center justify-content-center">
+      <div class="text-box">
+        <span class="badge bg-success mb-3">Free Delivery</span>
+        <h1 class="fw-bold display-5 text-white">Bulk Cooking Services</h1>
+        <p class="lead text-white">Available on Saturdays - Book 4 Days Ahead</p>
+        <a href="#" class="btn btn-warning btn-lg mt-3">Book Now</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide 3 (Text Right) -->
+  <div class="hero-slide text-right" style="background-image: url('https://res.cloudinary.com/dkoeutxie/image/upload/v1756752432/360_F_1290055402_G6X9j7tAm0M71enfRAJ4ax17A37d2wiE_syvqdr.jpg');">
+    <div class="overlay"></div>
+    <div class="container h-100 d-flex align-items-center justify-content-end">
+      <div class="text-box text-end">
+        <span class="badge bg-warning text-dark mb-3">African Special</span>
+        <h1 class="fw-bold display-5 text-white">Bulk Order for African Soups</h1>
+        <p class="lead text-white">Order 5 Days Ahead • Delivery on Saturdays</p>
+        <p class="lead text-white">Available from 9:00 AM - 11:00 PM</p>
+       <button class="order-btn btn btn-success" data-name="African Special" data-price="55,000">
+  Order
+</button>
+ 
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Featured Restaurants Section -->
+<section id="featuredRestaurants" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">⭐ Featured Restaurants</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1756752791/360_F_187860162_hWCup6TWAbKwOzS3sKxkn2ZDZmGxZA47_rekbum.jpg" class="card-img-top" alt="Restaurant">
+          <div class="card-body text-center">
+            <h5 class="card-title">Mama Cass</h5>
+            <p class="card-text">Authentic Nigerian dishes & quick service.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1756753156/hq720_d0fgy3.jpg" class="card-img-top" alt="Restaurant">
+          <div class="card-body text-center">
+            <h5 class="card-title">Tantalizers</h5>
+            <p class="card-text">Famous for fast food & local delicacies.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1756753633/photo_crz6hz.jpg" class="card-img-top" alt="Restaurant">
+          <div class="card-body text-center">
+            <h5 class="card-title">Chicken Republic</h5>
+            <p class="card-text">Tasty chicken meals & sides everyone loves.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- MENU SECTION -->
+
+<section id="food-list-section" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-5 fw-bold">Our Menu</h2>
+    <div class="row g-4">
+
+      <!-- Visible Menu Items (first 4) -->
+      <div class="col-md-4 col-lg-3">
+  <div class="card h-100 shadow-sm">
+    <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1756744379/veg_xdebnv.jpg" class="card-img-top menu-img" height="300px" alt="Vegetable Sauce with Grilled Chicken & Rice">
+    <div class="card-body text-center">
+      <h5 class="card-title">Vegetable Sauce w/ Grilled Chicken & Rice</h5>
+      <p class="text-muted">₦9,500</p>
+      <button 
+        class="btn btn-success mb-2 add-to-cart" 
+        data-name="Vegetable Sauce w/ Grilled Chicken & Rice" 
+        data-price="9500">
+        Add to Cart
+      </button>
+    </div>
+  </div>
+</div>
+
+
+      <div class="col-md-4 col-lg-3">
+        <div class="card h-100 shadow-sm">
+          <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1756743782/jollof_za8zhf.jpg" class="card-img-top menu-img" height="300px" alt="Jollof Rice">
+          <div class="card-body text-center">
+            <h5 class="card-title">Jollof Rice w/ Chicken</h5>
+            <p class="text-muted">₦7,000</p>
+            <button 
+        class="btn btn-success mb-2 add-to-cart" 
+        data-name="Jollof Rice w/ Chikcen" 
+        data-price="7000">
+        Add to Cart
+      </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-lg-3">
+        <div class="card h-100 shadow-sm">
+          <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1756744041/ugba_sf3l0b.jpg" class="card-img-top menu-img" alt="Ugba (African Salad)">
+          <div class="card-body text-center">
+            <h5 class="card-title">Ugba (African Salad)</h5>
+            <p class="text-muted">₦5,500</p>
+             <button 
+        class="btn btn-success mb-2 add-to-cart" 
+        data-name="Ugba (African Salad)" 
+        data-price="5500">
+        Add to Cart
+      </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-lg-3">
+        <div class="card h-100 shadow-sm">
+          <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1756743564/is_lq2zw6.jpg" class="card-img-top menu-img" alt="Isi-Ewu (Nkwobi)">
+          <div class="card-body text-center">
+            <h5 class="card-title">Isi-Ewu (Nkwobi)</h5>
+            <p class="text-muted">₦12,500</p>
+             <button 
+        class="btn btn-success mb-2 add-to-cart" 
+        data-name="Isi-Ewu (Nkwobi)" 
+        data-price="12500">
+        Add to Cart
+      </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hidden Items -->
+      <div id="moreMenu" class="row g-4 d-none mt-3">
+
+        <!-- Suya -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1756743064/nigerian-suya-34-1024x717.jpg_mommdw.webp" class="card-img-top menu-img" height="300px" alt="Suya">
+            <div class="card-body text-center">
+              <h5 class="card-title">Suya</h5>
+              <p class="text-muted">₦4,500</p>
+              <button class="btn btn-success mb-2 order-btn" data-name="Suya" data-price="4500">Grab Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vegetable Soups -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1756742843/food6_osaiim.jpg" class="card-img-top menu-img" height="300px" alt="Vegetable Soups">
+            <div class="card-body text-center">
+              <h5 class="card-title">Vegetable Soups</h5>
+              <p class="text-muted">₦6,500</p>
+               <button 
+              class="btn btn-success mb-2 add-to-cart" 
+              data-name="Vegetable Soup" 
+              data-price="6500">
+               Add to Cart
+         </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ora Soup -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1756743459/ora_swycpc.jpg" class="card-img-top menu-img" height="300px" alt="Ora Soup">
+            <div class="card-body text-center">
+              <h5 class="card-title">Ora Soup</h5>
+              <p class="text-muted">₦6,000</p>
+               <button 
+        class="btn btn-success mb-2 add-to-cart" 
+        data-name="Ora Soup" 
+        data-price="6000">
+        Add to Cart
+      </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Parfait -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1756743204/Greek-Yogurt-Parfait-Featured_sdyp08.jpg" class="card-img-top menu-img" height="300px"  alt="Parfait">
+            <div class="card-body text-center">
+              <h5 class="card-title">Parfait</h5>
+              <p class="text-muted">₦4,000</p>
+               <button 
+        class="btn btn-success mb-2 add-to-cart" 
+        data-name="Parfait" 
+        data-price="4000">
+        Add to Cart
+      </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Spring Rolls -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1756744683/Vegetable-Spring-Rolls-2-1_kyzvgv.jpg" class="card-img-top menu-img" height="300px" alt="Spring Rolls">
+            <div class="card-body text-center">
+              <h5 class="card-title">Spring Rolls</h5>
+              <p class="text-muted">₦2,500</p>
+               <button 
+        class="btn btn-success mb-2 add-to-cart" 
+        data-name="Spring Rolls" 
+        data-price="2500">
+        Add to Cart
+      </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Meatpies -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1756744672/mea_hee8n6.jpg" class="card-img-top menu-img" height="300px" alt="Meatpies">
+            <div class="card-body text-center">
+              <h5 class="card-title">Meatpies</h5>
+              <p class="text-muted">₦2,000</p>
+              <button class="btn btn-success mb-2 order-btn" data-name="Meatpies" data-price="2000">Order Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Greek Yogurt -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1756743201/greek_s3pdmf.jpg" class="card-img-top menu-img"  height="300px" alt="Greek Yogurt">
+            <div class="card-body text-center">
+              <h5 class="card-title">Greek Yogurt</h5>
+              <p class="text-muted">₦7,500</p>
+               <button 
+        class="btn btn-success mb-2 add-to-cart" 
+        data-name="Greek Yogurt" 
+        data-price="7500">
+        Add to Cart
+      </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Plantain Porridge -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1756744896/cameroonian-plantain-porridge-recipe-1-of-1_fb4gyb.jpg" class="card-img-top menu-img" height="300px" alt="Plantain Porridge">
+            <div class="card-body text-center">
+              <h5 class="card-title">Plantain Porridge</h5>
+              <p class="text-muted">₦6,000</p>
+       <button 
+        class="btn btn-success mb-2 add-to-cart" 
+        data-name="Plantain Porridge" 
+        data-price="6000">
+        Add to Cart
+      </button>  
+            </div>
+          </div>
+        </div>
+
+        <!-- Yam Sauce -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1756744995/yam_zpfizl.jpg" class="card-img-top menu-img" height="300px" alt="Yam Sauce">
+            <div class="card-body text-center">
+              <h5 class="card-title">Yam Sauce</h5>
+              <p class="text-muted">₦6,500</p>
+              <button class="btn btn-success mb-2 order-btn" data-name="Yam Sauce" data-price="6500">Order Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chicken Sauce -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1756744387/sauce_mxl329.jpg" class="card-img-top menu-img" height="300px"  alt="Chicken Sauce">
+            <div class="card-body text-center">
+              <h5 class="card-title">Chicken Sauce</h5>
+              <p class="text-muted">₦8,500</p>
+            <button 
+              class="btn btn-success mb-2 add-to-cart" 
+              data-name="Chicken Sauce" 
+             data-price="8500">
+              Add to Cart
+            </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Native Rice -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1756745238/ric_jgy3ob.jpg" class="card-img-top menu-img" height="300px" alt="Native Rice">
+            <div class="card-body text-center">
+              <h5 class="card-title">Native Rice</h5>
+              <p class="text-muted">₦7,500</p>
+           <button 
+              class="btn btn-success mb-2 add-to-cart" 
+              data-name="Native Rice" 
+              data-price="7500">
+             Add to Cart
+         </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Abacha with Fish -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1756746147/abaca_xanqm6.jpg" class="card-img-top menu-img" height="300px" alt="Abacha with Fish">
+            <div class="card-body text-center">
+              <h5 class="card-title">Abacha with Fish</h5>
+              <p class="text-muted">₦5,000</p>
+              <button 
+                class="btn btn-success mb-2 add-to-cart" 
+                data-name="Abacha with Fish" 
+                data-price="5000">
+                Add to Cart
+          </button>
+          </div>
+        </div>
+        </div>
+
+        <!-- Cowleg Sauce -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1756743052/coeled_qmwctv.jpg" class="card-img-top menu-img" height="300px" alt="Cowleg Sauce">
+            <div class="card-body text-center">
+              <h5 class="card-title">Cowleg Sauce</h5>
+              <p class="text-muted">₦9,000</p>
+               <button 
+                class="btn btn-success mb-2 add-to-cart" 
+               data-name="Cowleg Sauce" 
+                data-price="9000">
+               Add to Cart
+           </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Peppered Chicken -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1756747104/pep_jxwqm4.jpg" class="card-img-top menu-img" height="300px" alt="Peppered Chicken">
+            <div class="card-body text-center">
+              <h5 class="card-title">Peppered Chicken</h5>
+              <p class="text-muted">₦8,000</p>
+               <button 
+               class="btn btn-success mb-2 add-to-cart" 
+               data-name="Peppered Chicken" 
+               data-price="8000">
+               Add to Cart
+          </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- View More Button -->
+    <div class="text-center mt-4">
+  <button id="toggleFoodMenu1" class="btn btn-outline-primary">View More</button>
+</div>
+</section>
+
+<!-- Drinks Section -->
+
+<section id="drinks" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">🍹 Drinks</h2>
+    <div class="row g-4" id="drinks-list">
+      
+      <!-- Visible (first 4 drinks) -->
+      <div class="col-md-3">
+  <div class="card shadow-sm">
+    <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1756748985/Zobo_lbfmvf.jpg" class="card-img-top" height="300px" alt="Zobo">
+    <div class="card-body text-center">
+      <h5 class="card-title">Zobo</h5>
+      <p class="card-text">₦800</p>
+      <button 
+        class="btn btn-primary add-to-cart" 
+        data-name="Zobo" 
+        data-price="800">
+        Add to Cart
+      </button>
+    </div>
+  </div>
+</div>
+
+
+      <div class="col-md-3">
+  <div class="card shadow-sm">
+    <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1756750019/5C33B2BD-61A6-4475-BCDD-4B8B5DD160E3_ebvhvz.jpg" class="card-img-top" height="300px" alt="Chapman">
+    <div class="card-body text-center">
+      <h5 class="card-title">Chapman</h5>
+      <p class="card-text">₦2500</p>
+      <button 
+        class="btn btn-primary add-to-cart" 
+        data-name="Chapman" 
+        data-price="2500">
+        Add to Cart
+      </button>
+    </div>
+  </div>
+</div>
+
+
+      <div class="col-md-3">
+  <div class="card shadow-sm">
+    <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1756799514/using_akunafarms_health_drink_combo_dnelun.jpg" class="card-img-top" height="300px" alt="Fruit Smoothie">
+    <div class="card-body text-center">
+      <h5 class="card-title">Fruit Smooothie</h5>
+      <p class="card-text">₦2500</p>
+      <button 
+        class="btn btn-primary add-to-cart" 
+        data-name="Fruit Smoothie" 
+        data-price="2500">
+        Add to Cart
+      </button>
+    </div>
+  </div>
+</div>
+
+
+      <div class="col-md-3">
+  <div class="card shadow-sm">
+    <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1756748923/Tigernut-drinks_i5zpyk.webp" class="card-img-top" height="300px" alt="Tigernut">
+    <div class="card-body text-center">
+      <h5 class="card-title">Tigernut Drink</h5>
+      <p class="card-text">₦2000</p>
+      <button 
+        class="btn btn-primary add-to-cart" 
+        data-name="Tigernut Drink" 
+        data-price="2000">
+        Add to Cart
+      </button>
+    </div>
+  </div>
+</div>
+
+
+      <!-- Hidden (extra drinks) -->
+      <div class="col-md-3 d-none">
+  <div class="card shadow-sm">
+    <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1756748956/fresh-fruit-juice_hhkqwe.jpg" class="card-img-top" height="300px" alt="Juice">
+    <div class="card-body text-center">
+      <h5 class="card-title">Fresh Fruit Juice</h5>
+      <p class="card-text">₦2500</p>
+      <button 
+        class="btn btn-primary add-to-cart" 
+        data-name="Fresh Fruit Juice" 
+        data-price="2500">
+        Add to Cart
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-3 d-none">
+  <div class="card shadow-sm">
+    <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1756748908/bottled-water_qsk9ch.jpg" class="card-img-top" height="300px" alt="Coca Cola">
+    <div class="card-body text-center">
+      <h5 class="card-title">Bottle Water</h5>
+      <p class="card-text">₦500</p>
+      <button 
+        class="btn btn-primary add-to-cart" 
+        data-name="Bottle Water" 
+        data-price="500">
+        Add to Cart
+      </button>
+    </div>
+  </div>
+</div>
+
+
+    </div>
+
+    <!-- View More Button -->
+    <div class="text-center mt-4">
+      <button id="toggleDrinks" class="btn btn-outline-primary">View More</button>
+    </div>
+  </div>
+</section>
+
+
+<!-- ORDER SECTION -->
+ <!--Swallows-->
+
+
+<section id="swallows" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-5">🍴 Place Your Order</h2>
+
+    <h3 class="text-center mb-4">🥘 Swallows</h3>
+
+    <div class="row g-4" id="swallow-list">
+
+      <!-- Visible (first 4 items) -->
+       <div class="col-md-3 extra-swallow">
+  <div class="card shadow-sm h-100 text-center">
+    <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1756831828/download_1_asbu1s.jpg" class="card-img-top" height="300px" alt="Semolina">
+    <div class="card-body text-center">
+      <h5 class="card-title">Semolina</h5>
+      <p class="card-text">₦1500</p>
+      <button 
+        class="btn btn-warning add-to-cart" 
+        data-name="Semolina" 
+        data-price="1500">
+        Add to Cart
+      </button>
+    </div>
+  </div>
+</div>
+
+
+
+ <div class="col-md-3 extra-swallow">
+  <div class="card shadow-sm h-100 text-center">
+    <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1756831730/starc_qztpg6.jpg" class="card-img-top" height="300px" alt="Corn">
+    <div class="card-body text-center">
+      <h5 class="card-title">Corn </h5>
+      <p class="card-text">₦1500</p>
+      <button 
+        class="btn btn-warning add-to-cart" 
+        data-name="Corn" 
+        data-price="1500">
+        Add to Cart
+      </button>
+    </div>
+  </div>
+</div>
+
+      <div class="col-md-3 extra-swallow">
+  <div class="card shadow-sm h-100 text-center">
+    <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1756831265/eba_cmibyb.jpg" class="card-img-top" height="300px" alt="Eba">
+    <div class="card-body text-center">
+      <h5 class="card-title">Eba</h5>
+      <p class="card-text">₦500</p>
+      <button 
+        class="btn btn-warning add-to-cart" 
+        data-name="Eba" 
+        data-price="500">
+        Add to Cart
+      </button>
+    </div>
+  </div>
+</div>
+      <div class="col-md-3 extra-swallow">
+  <div class="card shadow-sm h-100 text-center">
+    <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1756831253/fuf_fhtkyf.jpg" class="card-img-top" height="300px" alt="Fufu">
+    <div class="card-body text-center">
+      <h5 class="card-title">Fufu</h5>
+      <p class="card-text">₦500</p>
+      <button 
+        class="btn btn-warning add-to-cart" 
+        data-name="fufu" 
+        data-price="500">
+        Add to Cart
+      </button>
+    </div>
+  </div>
+</div>
+
+      <!-- Hidden (extra items) -->
+       <div class="col-md-3 d-none  extra-swallow">
+  <div class="card shadow-sm h-100 text-center">
+    <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1756831600/whe_atec2m.jpg" class="card-img-top" height="300px" alt="Wheat">
+    <div class="card-body text-center">
+      <h5 class="card-title">Wheat </h5>
+      <p class="card-text">₦1500</p>
+      <button 
+        class="btn btn-warning add-to-cart" 
+        data-name="Wheat" 
+        data-price="1500">
+        Add to Cart
+      </button>
+    </div>
+  </div>
+</div>
+
+      <div class="col-md-3  d-none extra-swallow">
+  <div class="card shadow-sm h-100 text-center">
+    <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1756831897/images_3_a6woxl.jpg" class="card-img-top" height="300px" alt="Pounded Yam & Egusi">
+    <div class="card-body text-center">
+      <h5 class="card-title">Amala</h5>
+      <p class="card-text">₦1000</p>
+      <button 
+        class="btn btn-warning add-to-cart" 
+        data-name="Amala" 
+        data-price="1000">
+        Add to Cart
+      </button>
+    </div>
+  </div>
+</div>
+
+       <div class="col-md-3  d-none extra-swallow">
+  <div class="card shadow-sm h-100 text-center">
+    <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1756831266/semo_aalj2d.jpg" class="card-img-top" height="300px" alt="Pounded Yam & Egusi">
+    <div class="card-body text-center">
+      <h5 class="card-title">Semovita</h5>
+      <p class="card-text">₦1000</p>
+      <button 
+        class="btn btn-warning add-to-cart" 
+        data-name="Semovita" 
+        data-price="1000">
+        Add to Cart
+      </button>
+    </div>
+  </div>
+</div>
+
+      <div class="col-md-3  d-none extra-swallow">
+  <div class="card shadow-sm h-100 text-center">
+    <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1756831993/wrapped-pounded-yam-300x300_hlj3se.webp" class="card-img-top" height="300px"  alt="Pounded Yam & Egusi">
+    <div class="card-body text-center">
+      <h5 class="card-title">Pounded Yam</h5>
+      <p class="card-text">₦1500</p>
+      <button 
+        class="btn btn-warning add-to-cart" 
+        data-name="Pounded Yam" 
+        data-price="1500">
+        Add to Cart
+      </button>
+    </div>
+  </div>
+</div>
+
+
+    </div>
+
+    <!-- View More Button -->
+    <div class="text-center mt-4">
+      <button id="toggleSwallow" class="btn btn-outline-primary">View More</button>
+    </div>
+  </div>
+</section>
+
+     <!-- ===== Food Menu ===== -->
+
+
+<section id="foodmenu-section" class="py-5 bg-light">
+  <div class="container">
+    <h3 class="text-center mt-5 mb-4">🍲 Our Food Menu</h3>
+
+    <div class="row g-4" id="food-list-2">
+
+      <!-- First 4 visible items -->
+      <div class="col-md-3">
+  <div class="card shadow-sm">
+    <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1756743782/jollof_za8zhf.jpg" class="card-img-top" alt="Jollof Rice">
+    <div class="card-body text-center">
+      <h5 class="card-title">Jollof Rice</h5>
+      <p class="card-text">₦3500</p>
+      <button 
+        class="btn btn-success add-to-cart" 
+        data-name="Jollof Rice" 
+        data-price="2500">
+        Add to Cart
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-3">
+  <div class="card shadow-sm">
+    <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1756744387/sauce_mxl329.jpg" class="card-img-top" height="300px" alt="Jollof Rice">
+    <div class="card-body text-center">
+      <h5 class="card-title">Chicken Sauce</h5>
+      <p class="card-text">₦5500</p>
+      <button 
+        class="btn btn-success add-to-cart" 
+        data-name="Chicken sauce" 
+        data-price="5500">
+        Add to Cart
+      </button>
+    </div>
+  </div>
+</div>
+
+
+   <div class="col-md-3">
+  <div class="card shadow-sm">
+    <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1756838006/sddefault_gfou2c.jpg" class="card-img-top" height="300px" alt="Jollof Rice">
+    <div class="card-body text-center">
+      <h5 class="card-title">Ugba (African Salad)</h5>
+      <p class="card-text">₦8,699</p>
+      <button 
+        class="btn btn-success add-to-cart" 
+        data-name="Ugba (African Salad)" 
+        data-price="8699">
+        Add to Cart
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-3">
+  <div class="card shadow-sm">
+    <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1756743564/is_lq2zw6.jpg" class="card-img-top" height="300px" alt="Jollof Rice">
+    <div class="card-body text-center">
+      <h5 class="card-title">Nkwobi</h5>
+      <p class="card-text">₦14,500</p>
+      <button 
+        class="btn btn-success add-to-cart" 
+        data-name="Nkwobi" 
+        data-price="14500">
+        Add to Cart
+      </button>
+    </div>
+  </div>
+</div>
+
+
+      <!-- Hidden items -->
+      <div class="col-md-3 d-none extra-food">
+  <div class="card shadow-sm h-100 text-center">
+    <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1756743459/ora_swycpc.jpg" class="card-img-top" height="300px" alt="Jollof Rice">
+    <div class="card-body text-center">
+      <h5 class="card-title">Ora Soup</h5>
+      <p class="card-text">₦6,500</p>
+      <button 
+        class="btn btn-success add-to-cart" 
+        data-name="Ora Soup" 
+        data-price="6500">
+        Add to Cart
+      </button>
+    </div>
+  </div>
+</div>
+
+
+     <div class="col-md-3 d-none extra-food">
+  <div class="card shadow-sm h-100 text-center">
+    <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1756744379/veg_xdebnv.jpg" class="card-img-top" height="300px" alt="Jollof Rice">
+    <div class="card-body text-center">
+      <h5 class="card-title">Vegetable (Efo Riro)</h5>
+      <p class="card-text">₦8,500</p>
+      <button 
+        class="btn btn-success add-to-cart" 
+        data-name="Vegetable (Efo Riro)" 
+        data-price="8500">
+        Add to Cart
+      </button>
+    </div>
+  </div>
+</div>
+
+
+      <div class="col-md-3 d-none extra-food">
+  <div class="card shadow-sm h-100 text-center">
+    <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1756837743/images_4_n7m3o4.jpg" class="card-img-top" height="300px" alt="Jollof Rice">
+    <div class="card-body text-center">
+      <h5 class="card-title">Bitterleaf Soup</h5>
+      <p class="card-text">₦7,500</p>
+      <button 
+        class="btn btn-success add-to-cart" 
+        data-name="Bitterleaf Soup" 
+        data-price="7500">
+        Add to Cart
+      </button>
+    </div>
+  </div>
+</div>
+
+
+      <div class="col-md-3 d-none extra-food">
+  <div class="card shadow-sm h-100 text-center">
+    <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1756743204/Greek-Yogurt-Parfait-Featured_sdyp08.jpg" class="card-img-top" alt="Jollof Rice">
+    <div class="card-body text-center">
+      <h5 class="card-title">Parfait</h5>
+      <p class="card-text">₦5,500</p>
+      <button 
+        class="btn btn-success add-to-cart" 
+        data-name="Parfait" 
+        data-price="5500">
+        Add to Cart
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-3 d-none extra-food">
+  <div class="card shadow-sm h-100 text-center">
+    <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1756744683/Vegetable-Spring-Rolls-2-1_kyzvgv.jpg" class="card-img-top" height="300px" alt="Jollof Rice">
+    <div class="card-body text-center">
+      <h5 class="card-title">Spring Rolls</h5>
+      <p class="card-text">₦4,500</p>
+      <button 
+        class="btn btn-success add-to-cart" 
+        data-name="Spring Rolls" 
+        data-price="4500">
+        Add to Cart
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-3 d-none extra-food">
+  <div class="card shadow-sm h-100 text-center">
+    <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1756744537/mea_oqcp2d.jpg" class="card-img-top" height="300px" alt="Jollof Rice">
+    <div class="card-body text-center">
+      <h5 class="card-title">Meat Pies</h5>
+      <p class="card-text">₦3,999</p>
+      <button 
+        class="btn btn-success add-to-cart" 
+        data-name="Meat Pies" 
+        data-price="3999">
+        Add to Cart
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-3 d-none extra-food">
+  <div class="card shadow-sm h-100 text-center">
+    <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1756743201/greek_s3pdmf.jpg" class="card-img-top" height="300px" alt="Jollof Rice">
+    <div class="card-body text-center">
+      <h5 class="card-title">Greek Yogurt</h5>
+      <p class="card-text">₦8,500</p>
+      <button 
+        class="btn btn-success add-to-cart" 
+        data-name="Greek Yogurt" 
+        data-price="8500">
+        Add to Cart
+      </button>
+    </div>
+  </div>
+</div>
+
+
+      <div class="col-md-3 d-none extra-food">
+  <div class="card shadow-sm h-100 text-center">
+    <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1756744896/cameroonian-plantain-porridge-recipe-1-of-1_fb4gyb.jpg" class="card-img-top" height="300px" alt="Jollof Rice">
+    <div class="card-body text-center">
+      <h5 class="card-title">Plantain Poridge</h5>
+      <p class="card-text">₦5,500</p>
+      <button 
+        class="btn btn-success add-to-cart" 
+        data-name="plantain Porridge" 
+        data-price="5500">
+        Add to Cart
+      </button>
+    </div>
+  </div>
+</div>
+
+
+      <div class="col-md-3 d-none extra-food">
+  <div class="card shadow-sm h-100 text-center">
+    <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1756744995/yam_zpfizl.jpg" class="card-img-top" height="300px" alt="Jollof Rice">
+    <div class="card-body text-center">
+      <h5 class="card-title">Yam Porridge</h5>
+      <p class="card-text">₦6,500</p>
+      <button 
+        class="btn btn-success add-to-cart" 
+        data-name="Yam Porridge" 
+        data-price="6500">
+        Add to Cart
+      </button>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="col-md-3 d-none extra-food">
+  <div class="card shadow-sm h-100 text-center">
+    <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1756745238/ric_jgy3ob.jpg" class="card-img-top" height="300px" alt="Jollof Rice">
+    <div class="card-body text-center">
+      <h5 class="card-title">Native Rice</h5>
+      <p class="card-text">₦11,500</p>
+      <button 
+        class="btn btn-primary add-to-cart" 
+        data-name="Native Rice" 
+        data-price="11500">
+        Add to Cart
+      </button>
+    </div>
+  </div>
+</div>
+
+
+     <div class="col-md-3 d-none extra-food">
+  <div class="card shadow-sm h-100 text-center">
+    <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1756746147/abaca_xanqm6.jpg" class="card-img-top" height="300px" alt="Jollof Rice">
+    <div class="card-body text-center">
+      <h5 class="card-title">Abacha W/ fish</h5>
+      <p class="card-text">₦3,500</p>
+      <button 
+        class="btn btn-primary add-to-cart" 
+        data-name="Abacha W/ fish" 
+        data-price="3500">
+        Add to Cart
+      </button>
+    </div>
+  </div>
+</div>
+
+      <div class="col-md-3 d-none extra-food">
+  <div class="card shadow-sm h-100 text-center">
+    <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1756743052/coeled_qmwctv.jpg" class="card-img-top" height="300px" alt="Jollof Rice">
+    <div class="card-body text-center">
+      <h5 class="card-title">Cowleg Sauce</h5>
+      <p class="card-text">₦13,999</p>
+      <button 
+        class="btn btn-primary add-to-cart" 
+        data-name="Cowleg Sauce" 
+        data-price="13999">
+        Add to Cart
+      </button>
+    </div>
+  </div>
+</div>
+
+
+     <div class="col-md-3 d-none d-none extra-food">
+  <div class="card shadow-sm h-100 text-center">
+    <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1756747104/pep_jxwqm4.jpg" class="card-img-top" height="300px" alt="Jollof Rice">
+    <div class="card-body text-center">
+      <h5 class="card-title">Peppered Chicken</h5>
+      <p class="card-text">₦11,999</p>
+      <button 
+        class="btn btn-primary add-to-cart" 
+        data-name="Peppered Chicken" 
+        data-price="11999">
+        Add to Cart
+      </button>
+    </div>
+  </div>
+</div>
+
+
+    </div>
+
+    <!-- View More Button -->
+    <div class="text-center mt-4">
+      <button id="toggleFood2" class="btn btn-outline-primary">View More</button>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- jQuery & Owl Carousel -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<!-- Floating Cart Icon -->
+<a href="#" id="cartIcon" class="position-fixed bottom-0 end-0 m-3" data-bs-toggle="modal" data-bs-target="#cartModal">
+  <i class="fas fa-shopping-cart fa-2x"></i>
+  <span id="cartCount" class="badge bg-danger rounded-pill">0</span>
+</a>
+
+<!-- Cart Modal -->
+<div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Your Cart</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <ul id="cartItems" class="list-group mb-3"></ul>
+        <h5>Total: ₦<span id="cartTotal">0</span></h5>
+      </div>
+      <div class="modal-footer">
+        <button type="button" id="checkoutBtn" class="btn btn-success">Checkout</button>
+        <button type="button" id="clearCart" class="btn btn-danger">Clear</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// Add to Cart
+document.addEventListener('click', e => {
+  if(e.target.classList.contains('add-to-cart')) {
+    const name = e.target.dataset.name;
+    const price = parseFloat(e.target.dataset.price);
+
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    cart.push({ name, price });
+    localStorage.setItem('cart', JSON.stringify(cart));
+
+    updateCartUI();
+    alert("✅ Item added to cart!");
+  }
+});
+
+$(document).ready(function () {
+  // Hide all food items after the first 4
+  $("#food-list .col-md-3").slice(4).hide();
+
+  // Handle toggle button
+  $("#toggleFoodMenu").click(function () {
+    let hiddenItems = $("#food-list .col-md-3:hidden");
+
+    if (hiddenItems.length > 0) {
+      // Show the rest
+      hiddenItems.slideDown();
+      $(this).text("View Less");
+    } else {
+      // Hide again, keep only first 4 visible
+      $("#food-list .col-md-3").slice(4).slideUp();
+      $(this).text("View More");
+    }
+  });
+});
+
+
+// Update Cart UI
+function updateCartUI() {
+  let cart = JSON.parse(localStorage.getItem('cart')) || [];
+  const cartItems = document.getElementById('cartItems');
+  const cartTotal = document.getElementById('cartTotal');
+  const cartCount = document.getElementById('cartCount');
+
+  cartItems.innerHTML = '';
+  let total = 0;
+
+  cart.forEach((item, index) => {
+    total += item.price;
+    cartItems.innerHTML += `
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        ${item.name} - ₦${item.price.toLocaleString()}
+        <button class="btn btn-sm btn-outline-danger remove-item" data-index="${index}">Remove</button>
+      </li>`;
+  });
+
+  cartTotal.textContent = total.toLocaleString();
+  cartCount.textContent = cart.length;
+}
+
+// Remove item
+document.addEventListener('click', e => {
+  if(e.target.classList.contains('remove-item')) {
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    cart.splice(e.target.dataset.index, 1);
+    localStorage.setItem('cart', JSON.stringify(cart));
+    updateCartUI();
+  }
+});
+
+// Clear cart
+document.getElementById('clearCart').addEventListener('click', () => {
+  localStorage.removeItem('cart');
+  updateCartUI();
+});
+
+// Checkout
+document.getElementById('checkoutBtn').addEventListener('click', () => {
+  let cart = JSON.parse(localStorage.getItem('cart')) || [];
+  if (!cart.length) return alert('🛒 Your cart is empty!');
+  alert('🎉 Order placed successfully!');
+  localStorage.removeItem('cart');
+  updateCartUI();
+});
+ 
+// Load cart on page load
+updateCartUI();
+</script>
+<script>
+$(document).ready(function () {
+  // --- First Food Menu ---
+  $("#toggleFoodMenu1").click(function () {
+    $("#moreMenu").toggleClass("d-none");
+    $(this).text($(this).text() === "View More" ? "View Less" : "View More");
+  });
+
+  // --- Second Food Menu ---
+  $("#toggleFood2").click(function () {
+     $("#food-list-2 .extra-food").toggleClass("d-none");
+    $(this).text($(this).text() === "View More" ? "View Less" : "View More");
+  });
+
+  // --- Drinks Section ---
+  $("#toggleDrinks").click(function () {
+    $("#drinks-list .d-none").toggleClass("d-none");
+    $(this).text($(this).text() === "View More" ? "View Less" : "View More");
+  });
+
+  // --- Swallow Section ---
+  $("#toggleSwallow").click(function () {
+    $("#swallow-list .d-none").toggleClass("d-none");
+    $(this).text($(this).text() === "View More" ? "View Less" : "View More");
+  });
+});
+</script>
+
+
+
+
+<!-- FOOTER -->
+<footer class="bg-dark text-light pt-5 pb-3">
+  <div class="container">
+    <div class="row g-4">
+      
+      <!-- Logo & Company Name -->
+      <div class="col-md-3 text-center text-md-start">
+        <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1756735679/eatwitjay_a1t08o.png" 
+             alt="EATWITJAY Logo" height="60" class="mb-2">
+        <h5 class="fw-bold">EATWITJAY</h5>
+        <p>Delicious food delivered to your doorstep.</p>
+      </div>
+      
+      <!-- Quick Links -->
+      <div class="col-md-3">
+        <h5 class="fw-bold mb-3">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="#featured-restaurants" class="text-light text-decoration-none">Featured Restaurants</a></li>
+          <li><a href="#food-menu" class="text-light text-decoration-none">Food Menu</a></li>
+          <li><a href="#drinks" class="text-light text-decoration-none">Drinks</a></li>
+          <li><a href="#swallows" class="text-light text-decoration-none">Swallows</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Contact Us</a></li>
+        </ul>
+      </div>
+      
+      <!-- Newsletter -->
+      <div class="col-md-3">
+        <h5 class="fw-bold mb-3">Newsletter</h5>
+        <p>Subscribe to get the latest offers and updates.</p>
+        <form class="d-flex flex-column flex-sm-row gap-2">
+          <input type="email" class="form-control form-control-sm" placeholder="Enter your email" required>
+          <button type="submit" class="btn btn-warning btn-sm">Subscribe</button>
+        </form>
+      </div>
+      
+      <!-- Social Icons -->
+      <div class="col-md-3">
+        <h5 class="fw-bold mb-3">Follow Us</h5>
+        <div class="d-flex gap-2">
+          <a href="#" class="text-light fs-4"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-light fs-4"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-light fs-4"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-light fs-4"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <hr class="mt-4 border-secondary">
+    
+    <!-- Footer Bottom -->
+    <div class="row">
+      <div class="col text-center">
+        <p class="mb-0">&copy; 2025 EATWITJAY. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Owl Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<!-- Init Script -->
+<script>
+  $(document).ready(function(){
+    $(".hero-carousel").owlCarousel({
+      items: 1,
+      loop: true,
+      autoplay: true,
+      autoplayTimeout: 5000,
+      autoplayHoverPause: true,
+      nav: true,
+      dots: true,
+      animateOut: "fadeOut"
+    });
+  });
+</script>
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
