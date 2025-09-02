@@ -51,14 +51,12 @@
   <!-- Navigation (inside header, so it’s fixed too) -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-
-      <!-- Brand (only visible on mobile for quick nav) -->
-      <a class="navbar-brand d-lg-none fw-bold" href="#">EATWITJAY</a>
-
       <!-- Hamburger -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
         <span class="navbar-toggler-icon"></span>
       </button>
+
+
 
       <!-- Nav Links -->
       <div class="collapse navbar-collapse" id="mainNav">
@@ -88,16 +86,18 @@
               <i class="fas fa-utensils me-1"></i> Menu
             </a>
             <ul class="dropdown-menu" aria-labelledby="menuDropdown">
-              <li><a class="dropdown-item" href="#featuredRestaurants">Featured Restaurants</a></li>
-              <li><a class="dropdown-item" href="#OurFoodMenu">Food Menu</a></li>
+              <li><a class="dropdown-item" href="#featured Restaurants">Featured Restaurants</a></li>
+              <li><a class="dropdown-item" href="#Food Menu">Food Menu</a></li>
               <li><a class="dropdown-item" href="#Drinks">Drinks</a></li>
               <li><a class="dropdown-item" href="#Swallows">Swallows</a></li>
             </ul>
           </li>
-
-          <li class="nav-item"><a class="nav-link" href="#cart"><i class="fas fa-shopping-cart me-1"></i> Cart</a></li>
+         <li class="nav-item"><a class="nav-link" href="#cart"><i class="fas fa-shopping-cart me-1"></i> Cart</a></li>
+          
           <li class="nav-item"><a class="nav-link" href="#Offers"><i class="fas fa-tags me-1"></i> Offers</a></li>
         </ul>
+
+
 
         <!-- Search Form (Right End) -->
         <form class="d-flex ms-auto mt-2 mt-lg-0" role="search">
@@ -151,7 +151,10 @@
         <h1 class="fw-bold display-5 text-white">Bulk Order for African Soups</h1>
         <p class="lead text-white">Order 5 Days Ahead • Delivery on Saturdays</p>
         <p class="lead text-white">Available from 9:00 AM - 11:00 PM</p>
-        <a href="#" class="btn btn-danger btn-lg mt-3">Order Now</a>
+       <button class="order-btn btn btn-success" data-name="African Special" data-price="55,000">
+  Order
+</button>
+ 
       </div>
     </div>
   </div>
@@ -164,13 +167,14 @@
     <h2 class="text-center mb-5 fw-bold">Our Menu</h2>
     <div class="row g-4">
 
-      <!-- Visible Menu Items -->
+      <!-- Visible Menu Items (first 4) -->
       <div class="col-md-4 col-lg-3">
         <div class="card h-100 shadow-sm">
           <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1756744379/veg_xdebnv.jpg" class="card-img-top menu-img" alt="Vegetable Sauce with Grilled Chicken & Rice">
           <div class="card-body text-center">
             <h5 class="card-title">Vegetable Sauce w/ Grilled Chicken & Rice</h5>
             <p class="text-muted">₦9,500</p>
+            <button class="btn btn-success mb-2">Order Now</button>
           </div>
         </div>
       </div>
@@ -181,6 +185,7 @@
           <div class="card-body text-center">
             <h5 class="card-title">Jollof Rice</h5>
             <p class="text-muted">₦7,000</p>
+            <button class="btn btn-success mb-2">Grab Now</button>
           </div>
         </div>
       </div>
@@ -191,6 +196,7 @@
           <div class="card-body text-center">
             <h5 class="card-title">Ugba (African Salad)</h5>
             <p class="text-muted">₦5,500</p>
+            <button class="btn btn-success mb-2">Eat Now</button>
           </div>
         </div>
       </div>
@@ -201,6 +207,7 @@
           <div class="card-body text-center">
             <h5 class="card-title">Isi-Ewu (Nkwobi)</h5>
             <p class="text-muted">₦12,000</p>
+            <button class="btn btn-success mb-2">Order Now</button>
           </div>
         </div>
       </div>
@@ -215,6 +222,7 @@
             <div class="card-body text-center">
               <h5 class="card-title">Suya</h5>
               <p class="text-muted">₦4,500</p>
+              <button class="btn btn-success mb-2">Grab Now</button>
             </div>
           </div>
         </div>
@@ -226,6 +234,7 @@
             <div class="card-body text-center">
               <h5 class="card-title">Vegetable Soups</h5>
               <p class="text-muted">₦6,500</p>
+              <button class="btn btn-success mb-2">Eat Now</button>
             </div>
           </div>
         </div>
@@ -237,6 +246,7 @@
             <div class="card-body text-center">
               <h5 class="card-title">Ora Soup</h5>
               <p class="text-muted">₦6,000</p>
+              <button class="btn btn-success mb-2">Order Now</button>
             </div>
           </div>
         </div>
@@ -248,6 +258,7 @@
             <div class="card-body text-center">
               <h5 class="card-title">Parfait</h5>
               <p class="text-muted">₦4,000</p>
+              <button class="btn btn-success mb-2">Grab Now</button>
             </div>
           </div>
         </div>
@@ -259,6 +270,7 @@
             <div class="card-body text-center">
               <h5 class="card-title">Spring Rolls</h5>
               <p class="text-muted">₦2,500</p>
+              <button class="btn btn-success mb-2">Eat Now</button>
             </div>
           </div>
         </div>
@@ -270,6 +282,7 @@
             <div class="card-body text-center">
               <h5 class="card-title">Meatpies</h5>
               <p class="text-muted">₦2,000</p>
+              <button class="btn btn-success mb-2">Order Now</button>
             </div>
           </div>
         </div>
@@ -281,6 +294,7 @@
             <div class="card-body text-center">
               <h5 class="card-title">Greek Yogurt</h5>
               <p class="text-muted">₦3,500</p>
+              <button class="btn btn-success mb-2">Grab Now</button>
             </div>
           </div>
         </div>
@@ -292,6 +306,7 @@
             <div class="card-body text-center">
               <h5 class="card-title">Plantain Porridge</h5>
               <p class="text-muted">₦6,000</p>
+              <button class="btn btn-success mb-2">Eat Now</button>
             </div>
           </div>
         </div>
@@ -303,6 +318,7 @@
             <div class="card-body text-center">
               <h5 class="card-title">Yam Sauce</h5>
               <p class="text-muted">₦6,500</p>
+              <button class="btn btn-success mb-2">Order Now</button>
             </div>
           </div>
         </div>
@@ -314,6 +330,7 @@
             <div class="card-body text-center">
               <h5 class="card-title">Chicken Sauce</h5>
               <p class="text-muted">₦8,500</p>
+              <button class="btn btn-success mb-2">Grab Now</button>
             </div>
           </div>
         </div>
@@ -325,6 +342,7 @@
             <div class="card-body text-center">
               <h5 class="card-title">Native Rice</h5>
               <p class="text-muted">₦7,500</p>
+              <button class="btn btn-success mb-2">Eat Now</button>
             </div>
           </div>
         </div>
@@ -336,6 +354,7 @@
             <div class="card-body text-center">
               <h5 class="card-title">Abacha with Fish</h5>
               <p class="text-muted">₦5,000</p>
+              <button class="btn btn-success mb-2">Order Now</button>
             </div>
           </div>
         </div>
@@ -347,6 +366,7 @@
             <div class="card-body text-center">
               <h5 class="card-title">Cowleg Sauce</h5>
               <p class="text-muted">₦9,000</p>
+              <button class="btn btn-success mb-2">Grab Now</button>
             </div>
           </div>
         </div>
@@ -358,6 +378,7 @@
             <div class="card-body text-center">
               <h5 class="card-title">Peppered Chicken</h5>
               <p class="text-muted">₦8,000</p>
+              <button class="btn btn-success mb-2">Eat Now</button>
             </div>
           </div>
         </div>
@@ -367,12 +388,11 @@
 
     <!-- View More Button -->
     <div class="text-center mt-4">
-      <button id="viewMoreBtn" class="btn btn-warning px-4 py-2 fw-bold">
-        View More
-      </button>
+      <button id="viewMoreBtn" class="btn btn-warning px-4 py-2 fw-bold">View More</button>
     </div>
   </div>
 </section>
+
 
 
 
@@ -420,7 +440,9 @@
 <section id="Drinks" class="py-5 bg-light">
   <div class="container">
     <h2 class="text-center mb-4">🍹 Drinks</h2>
-    <div class="row g-4">
+    <div class="row g-4" id="drinks-list">
+      
+      <!-- Visible (first 4 drinks) -->
       <div class="col-md-3">
         <div class="card text-center shadow-sm">
           <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1756748985/Zobo_lbfmvf.jpg" class="card-img-top" alt="Zobo Drink">
@@ -429,8 +451,8 @@
             <p class="text-muted">₦800</p>
           </div>
         </div>
+      </div>
 
-    </div>
       <div class="col-md-3">
         <div class="card text-center shadow-sm">
           <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1756750019/5C33B2BD-61A6-4475-BCDD-4B8B5DD160E3_ebvhvz.jpg" class="card-img-top" alt="Chapman">
@@ -440,6 +462,7 @@
           </div>
         </div>
       </div>
+
       <div class="col-md-3">
         <div class="card text-center shadow-sm">
           <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1756748921/protein-smoothie-recipe_cm6oxx.jpg" class="card-img-top" alt="Smoothie">
@@ -449,116 +472,43 @@
           </div>
         </div>
       </div>
+
       <div class="col-md-3">
         <div class="card text-center shadow-sm">
-          <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1756748951/Tigernut-drinks_b28soy.webp" class="card-img-top" alt="Greek Yogurt">
+          <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1756748951/Tigernut-drinks_b28soy.webp" class="card-img-top" alt="Tigernut">
           <div class="card-body">
             <h5 class="card-title">Tigernut Drink</h5>
             <p class="text-muted">₦1,800</p>
           </div>
         </div>
       </div>
-     <div class="col-md-3">
+
+      <!-- Hidden (extra drinks) -->
+      <div class="col-md-3 d-none extra-drinks">
         <div class="card text-center shadow-sm">
-          <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1756748956/fresh-fruit-juice_hhkqwe.jpg" class="card-img-top" alt="Greek Yogurt">
+          <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1756748956/fresh-fruit-juice_hhkqwe.jpg" class="card-img-top" alt="Fruit Juice">
           <div class="card-body">
             <h5 class="card-title">Fresh Fruit Juice</h5>
             <p class="text-muted">₦1,500</p>
           </div>
         </div>
       </div>
-     <div class="col-md-3">
+
+      <div class="col-md-3 d-none extra-drinks">
         <div class="card text-center shadow-sm">
-          <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1756748908/bottled-water_qsk9ch.jpg" class="card-img-top" alt="Greek Yogurt">
+          <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1756748908/bottled-water_qsk9ch.jpg" class="card-img-top" alt="Bottle Water">
           <div class="card-body">
             <h5 class="card-title">Bottle Water</h5>
             <p class="text-muted">₦500</p>
           </div>
         </div>
       </div>
+
     </div>
-  </div>
-</section>
 
-
-<!-- Offers Section -->
-<section id="Offers" class="py-5 bg-light">
-  <div class="container">
-    <h2 class="text-center fw-bold mb-4">Special Offers</h2>
-    <div class="row g-4">
-
-      <!-- Offer 1 -->
-      <div class="col-md-4">
-        <div class="card shadow-sm h-100 border-0">
-          <img src="https://via.placeholder.com/400x250?text=Weekend+Deal" class="card-img-top" alt="Weekend Deal">
-          <div class="card-body text-center">
-            <h5 class="card-title fw-bold text-danger">🔥 Weekend Deal</h5>
-            <p class="card-text">Order any African Soup and get <strong>FREE delivery</strong> on Saturday (9am–11pm).</p>
-            <button class="btn btn-danger">Order Now</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Offer 2 -->
-      <div class="col-md-4">
-        <div class="card shadow-sm h-100 border-0">
-          <img src="https://via.placeholder.com/400x250?text=Family+Pack" class="card-img-top" alt="Family Pack">
-          <div class="card-body text-center">
-            <h5 class="card-title fw-bold text-success">🥗 Family Pack</h5>
-            <p class="card-text">Get a <strong>10% discount</strong> when you order 3 or more meals.</p>
-            <button class="btn btn-success">Grab Offer</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Offer 3 -->
-      <div class="col-md-4">
-        <div class="card shadow-sm h-100 border-0">
-          <img src="https://via.placeholder.com/400x250?text=Drinks+Combo" class="card-img-top" alt="Drinks Combo">
-          <div class="card-body text-center">
-            <h5 class="card-title fw-bold text-primary">🍹 Drinks Combo</h5>
-            <p class="card-text">Add any drink to your meal and enjoy <strong>20% off</strong> on the drink price.</p>
-            <button class="btn btn-primary">Add to Cart</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Offer 4 -->
-      <div class="col-md-4">
-        <div class="card shadow-sm h-100 border-0">
-          <img src="https://via.placeholder.com/400x250?text=Pastry+Combo" class="card-img-top" alt="Pastry Combo">
-          <div class="card-body text-center">
-            <h5 class="card-title fw-bold text-warning">🥐 Pastry Combo</h5>
-            <p class="card-text">Enjoy a snack pack: meat pie + doughnut + drink for <strong>₦1500</strong>.</p>
-            <button class="btn btn-warning">Order Combo</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Offer 5 -->
-      <div class="col-md-4">
-        <div class="card shadow-sm h-100 border-0">
-          <img src="https://via.placeholder.com/400x250?text=Herbal+Tea+Combo" class="card-img-top" alt="Herbal Tea Combo">
-          <div class="card-body text-center">
-            <h5 class="card-title fw-bold text-success">🍵 Herbal Tea Combo</h5>
-            <p class="card-text">Buy 2 herbal teas and get the 3rd cup <strong>FREE</strong>.</p>
-            <button class="btn btn-success">Enjoy Tea</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Offer 6 -->
-      <div class="col-md-4">
-        <div class="card shadow-sm h-100 border-0">
-          <img src="https://via.placeholder.com/400x250?text=Health+Drink+Combo" class="card-img-top" alt="Health Drink Combo">
-          <div class="card-body text-center">
-            <h5 class="card-title fw-bold text-info">💪 Health Drink Combo</h5>
-            <p class="card-text">Smoothies + fruit juice combo with <strong>15% discount</strong>.</p>
-            <button class="btn btn-info">Stay Healthy</button>
-          </div>
-        </div>
-      </div>
-
+    <!-- View More Button -->
+    <div class="text-center mt-4">
+      <button id="toggleDrinks" class="btn btn-outline-primary">View More</button>
     </div>
   </div>
 </section>
@@ -569,12 +519,12 @@
   <div class="container">
     <h2 class="text-center mb-5">🍴 Place Your Order</h2>
 
-    <div class="row g-4">
+    <h3 class="text-center mb-4">🥘 Swallows</h3>
 
-      <!-- ===== Swallows ===== -->
-      <h3 class="text-center mb-4">🥘 Swallows</h3>
+    <div class="row g-4" id="swallow-list">
 
-      <div class="col-md-4">
+      <!-- Visible (first 4 items) -->
+      <div class="col-md-3">
         <div class="card shadow-sm h-100 text-center">
           <div class="card-body">
             <h5 class="card-title">Pounded Yam</h5>
@@ -584,7 +534,7 @@
         </div>
       </div>
 
-      <div class="col-md-4">
+      <div class="col-md-3">
         <div class="card shadow-sm h-100 text-center">
           <div class="card-body">
             <h5 class="card-title">Fufu</h5>
@@ -594,7 +544,7 @@
         </div>
       </div>
 
-      <div class="col-md-4">
+      <div class="col-md-3">
         <div class="card shadow-sm h-100 text-center">
           <div class="card-body">
             <h5 class="card-title">Eba</h5>
@@ -604,7 +554,7 @@
         </div>
       </div>
 
-      <div class="col-md-4">
+      <div class="col-md-3">
         <div class="card shadow-sm h-100 text-center">
           <div class="card-body">
             <h5 class="card-title">Semo</h5>
@@ -614,7 +564,8 @@
         </div>
       </div>
 
-      <div class="col-md-4">
+      <!-- Hidden (extra items) -->
+      <div class="col-md-3 d-none extra-swallow">
         <div class="card shadow-sm h-100 text-center">
           <div class="card-body">
             <h5 class="card-title">Wheat</h5>
@@ -624,7 +575,7 @@
         </div>
       </div>
 
-      <div class="col-md-4">
+      <div class="col-md-3 d-none extra-swallow">
         <div class="card shadow-sm h-100 text-center">
           <div class="card-body">
             <h5 class="card-title">Amala</h5>
@@ -634,7 +585,7 @@
         </div>
       </div>
 
-      <div class="col-md-4">
+      <div class="col-md-3 d-none extra-swallow">
         <div class="card shadow-sm h-100 text-center">
           <div class="card-body">
             <h5 class="card-title">Tuwo Shinkafa</h5>
@@ -644,7 +595,7 @@
         </div>
       </div>
 
-      <div class="col-md-4">
+      <div class="col-md-3 d-none extra-swallow">
         <div class="card shadow-sm h-100 text-center">
           <div class="card-body">
             <h5 class="card-title">Plantain Flour (Elubo)</h5>
@@ -654,11 +605,24 @@
         </div>
       </div>
 
+    </div>
 
-      <!-- ===== Food Menu ===== -->
-      <h3 class="text-center mt-5 mb-4">🍲 Our Food Menu</h3>
+    <!-- View More Button -->
+    <div class="text-center mt-4">
+      <button id="toggleSwallow" class="btn btn-outline-primary">View More</button>
+    </div>
+  </div>
+</section>
 
-      <div class="col-md-4">
+     <!-- ===== Food Menu ===== -->
+<section id="food-menu" class="py-5 bg-light">
+  <div class="container">
+    <h3 class="text-center mt-5 mb-4">🍲 Our Food Menu</h3>
+
+    <div class="row g-4" id="food-list">
+
+      <!-- First 4 visible items -->
+      <div class="col-md-3">
         <div class="card shadow-sm h-100 text-center">
           <div class="card-body">
             <h5 class="card-title">Vegetable Sauce w/ Grilled Chicken & Rice</h5>
@@ -668,7 +632,7 @@
         </div>
       </div>
 
-      <div class="col-md-4">
+      <div class="col-md-3">
         <div class="card shadow-sm h-100 text-center">
           <div class="card-body">
             <h5 class="card-title">Jollof Rice</h5>
@@ -678,7 +642,7 @@
         </div>
       </div>
 
-      <div class="col-md-4">
+      <div class="col-md-3">
         <div class="card shadow-sm h-100 text-center">
           <div class="card-body">
             <h5 class="card-title">Ugba (African Salad)</h5>
@@ -688,7 +652,7 @@
         </div>
       </div>
 
-      <div class="col-md-4">
+      <div class="col-md-3">
         <div class="card shadow-sm h-100 text-center">
           <div class="card-body">
             <h5 class="card-title">Isiewu (Nkwobi)</h5>
@@ -698,7 +662,8 @@
         </div>
       </div>
 
-      <div class="col-md-4">
+      <!-- Hidden items -->
+      <div class="col-md-3 d-none extra-food">
         <div class="card shadow-sm h-100 text-center">
           <div class="card-body">
             <h5 class="card-title">Suya</h5>
@@ -708,7 +673,7 @@
         </div>
       </div>
 
-      <div class="col-md-4">
+      <div class="col-md-3 d-none extra-food">
         <div class="card shadow-sm h-100 text-center">
           <div class="card-body">
             <h5 class="card-title">Vegetable Soup (Efo Riro)</h5>
@@ -718,7 +683,7 @@
         </div>
       </div>
 
-      <div class="col-md-4">
+      <div class="col-md-3 d-none extra-food">
         <div class="card shadow-sm h-100 text-center">
           <div class="card-body">
             <h5 class="card-title">Ora Soup</h5>
@@ -728,7 +693,7 @@
         </div>
       </div>
 
-      <div class="col-md-4">
+      <div class="col-md-3 d-none extra-food">
         <div class="card shadow-sm h-100 text-center">
           <div class="card-body">
             <h5 class="card-title">Parfait</h5>
@@ -738,7 +703,7 @@
         </div>
       </div>
 
-      <div class="col-md-4">
+      <div class="col-md-3 d-none extra-food">
         <div class="card shadow-sm h-100 text-center">
           <div class="card-body">
             <h5 class="card-title">Spring Rolls</h5>
@@ -748,7 +713,7 @@
         </div>
       </div>
 
-      <div class="col-md-4">
+      <div class="col-md-3 d-none extra-food">
         <div class="card shadow-sm h-100 text-center">
           <div class="card-body">
             <h5 class="card-title">Meat Pies</h5>
@@ -758,7 +723,7 @@
         </div>
       </div>
 
-      <div class="col-md-4">
+      <div class="col-md-3 d-none extra-food">
         <div class="card shadow-sm h-100 text-center">
           <div class="card-body">
             <h5 class="card-title">Greek Yoghurt</h5>
@@ -768,7 +733,7 @@
         </div>
       </div>
 
-      <div class="col-md-4">
+      <div class="col-md-3 d-none extra-food">
         <div class="card shadow-sm h-100 text-center">
           <div class="card-body">
             <h5 class="card-title">Plantain Porridge</h5>
@@ -778,7 +743,7 @@
         </div>
       </div>
 
-      <div class="col-md-4">
+      <div class="col-md-3 d-none extra-food">
         <div class="card shadow-sm h-100 text-center">
           <div class="card-body">
             <h5 class="card-title">Yam Sauce</h5>
@@ -788,7 +753,7 @@
         </div>
       </div>
 
-      <div class="col-md-4">
+      <div class="col-md-3 d-none extra-food">
         <div class="card shadow-sm h-100 text-center">
           <div class="card-body">
             <h5 class="card-title">Native Rice</h5>
@@ -798,7 +763,7 @@
         </div>
       </div>
 
-      <div class="col-md-4">
+      <div class="col-md-3 d-none extra-food">
         <div class="card shadow-sm h-100 text-center">
           <div class="card-body">
             <h5 class="card-title">Abacha w/ Fish</h5>
@@ -808,7 +773,7 @@
         </div>
       </div>
 
-      <div class="col-md-4">
+      <div class="col-md-3 d-none extra-food">
         <div class="card shadow-sm h-100 text-center">
           <div class="card-body">
             <h5 class="card-title">Cowleg Sauce</h5>
@@ -818,66 +783,187 @@
         </div>
       </div>
 
-      <div class="col-md-4">
+      <div class="col-md-3 d-none extra-food">
         <div class="card shadow-sm h-100 text-center">
           <div class="card-body">
             <h5 class="card-title">Peppered Chicken</h5>
             <p class="text-danger fw-bold">₦9,999</p>
-            <button class="btn btn-success order-btn">Order Now</button>
+           <button class="btn btn-success order-btn" data-name="Peppered chicken" data-price="9,999">Order Now</button>
+
           </div>
         </div>
       </div>
 
+    </div>
+
+    <!-- View More Button -->
+    <div class="text-center mt-4">
+      <button id="toggleFood" class="btn btn-outline-primary">View More</button>
     </div>
   </div>
 </section>
 
 
 
-<!-- Order Button JS -->
+
+<!-- jQuery & Owl Carousel -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
 <script>
+  // Initialize hero carousel
+  $(".hero-carousel").owlCarousel({
+    items: 1,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 4000,
+    autoplayHoverPause: true,
+    nav: true,
+    dots: true,
+    navText: ["<i class='fas fa-chevron-left'></i>", "<i class='fas fa-chevron-right'></i>"]
+  });
+
+  // Toggle sections (Food, Drinks, Swallow)
+  function setupToggle(btnId, itemClass) {
+    document.getElementById(btnId).addEventListener("click", function() {
+      document.querySelectorAll(itemClass).forEach(item => item.classList.toggle("d-none"));
+      this.textContent = this.textContent === "View More" ? "View Less" : "View More";
+    });
+  }
+
+  setupToggle("viewMoreBtn", "#moreMenu");
+  setupToggle("toggleDrinks", ".extra-drinks");
+  setupToggle("toggleSwallow", ".extra-swallow");
+  setupToggle("toggleFood", ".extra-food");
+
+  // Cart functionality
+  const cart = [];
+  const cartCount = document.getElementById('cartCount');
+  const cartIcon = document.getElementById('cartIcon');
+  const cartItems = document.getElementById('cartItems');
+  const cartTotal = document.getElementById('cartTotal');
+  const checkoutBtn = document.getElementById('checkoutBtn');
+
+  function updateCartCount() {
+    cartCount.textContent = cart.length;
+  }
+
+  function renderCart() {
+    cartItems.innerHTML = '';
+    let total = 0;
+    cart.forEach((item, index) => {
+      const li = document.createElement('li');
+      li.classList.add('list-group-item', 'd-flex', 'justify-content-between', 'align-items-center');
+      li.innerHTML = `
+        ${item.name} - ₦${item.price}
+        <button class="btn btn-sm btn-danger remove-btn" data-index="${index}">&times;</button>
+      `;
+      cartItems.appendChild(li);
+      total += parseInt(item.price);
+    });
+    cartTotal.textContent = total;
+    updateCartCount();
+  }
+
+  // Add to cart button
   document.querySelectorAll('.order-btn').forEach(btn => {
     btn.addEventListener('click', () => {
+      const name = btn.dataset.name;
+      const price = btn.dataset.price;
+      cart.push({ name, price });
+      renderCart();
       alert("✅ Your order has been added!");
     });
   });
-</script>
 
-
-<!-- Toggle Script -->
-<script>
-  document.getElementById("viewMoreBtn").addEventListener("click", function () {
-    let moreMenu = document.getElementById("moreMenu");
-    if (moreMenu.classList.contains("d-none")) {
-      moreMenu.classList.remove("d-none");
-      this.innerText = "View Less";
-    } else {
-      moreMenu.classList.add("d-none");
-      this.innerText = "View More";
+  // Remove item from cart
+  cartItems.addEventListener('click', e => {
+    if (e.target.classList.contains('remove-btn')) {
+      const index = e.target.dataset.index;
+      cart.splice(index, 1);
+      renderCart();
     }
+  });
+
+  // Checkout
+  checkoutBtn.addEventListener('click', () => {
+    if (!cart.length) return alert('Cart is empty!');
+    alert('Order placed successfully!');
+    cart.length = 0; // clear cart
+    renderCart();
+  });
+
+  // Click on floating cart icon to show items
+  cartIcon.addEventListener('click', e => {
+    e.preventDefault();
+    if (!cart.length) return alert('Your cart is empty!');
+    const total = cart.reduce((sum, item) => sum + parseInt(item.price), 0);
+    const list = cart.map(item => `${item.name} - ₦${item.price}`).join('\n');
+    alert(`Cart Items:\n${list}\n\nTotal: ₦${total}`);
   });
 </script>
 
+<!-- FOOTER -->
+<footer class="bg-dark text-light pt-5 pb-3">
+  <div class="container">
+    <div class="row g-4">
+      
+      <!-- Logo & Company Name -->
+      <div class="col-md-3 text-center text-md-start">
+        <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1756735679/eatwitjay_a1t08o.png" 
+             alt="EATWITJAY Logo" height="60" class="mb-2">
+        <h5 class="fw-bold">EATWITJAY</h5>
+        <p>Delicious food delivered to your doorstep.</p>
+      </div>
+      
+      <!-- Quick Links -->
+      <div class="col-md-3">
+        <h5 class="fw-bold mb-3">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="#featured-restaurants" class="text-light text-decoration-none">Featured Restaurants</a></li>
+          <li><a href="#food-menu" class="text-light text-decoration-none">Food Menu</a></li>
+          <li><a href="#drinks" class="text-light text-decoration-none">Drinks</a></li>
+          <li><a href="#swallows" class="text-light text-decoration-none">Swallows</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Contact Us</a></li>
+        </ul>
+      </div>
+      
+      <!-- Newsletter -->
+      <div class="col-md-3">
+        <h5 class="fw-bold mb-3">Newsletter</h5>
+        <p>Subscribe to get the latest offers and updates.</p>
+        <form class="d-flex flex-column flex-sm-row gap-2">
+          <input type="email" class="form-control form-control-sm" placeholder="Enter your email" required>
+          <button type="submit" class="btn btn-warning btn-sm">Subscribe</button>
+        </form>
+      </div>
+      
+      <!-- Social Icons -->
+      <div class="col-md-3">
+        <h5 class="fw-bold mb-3">Follow Us</h5>
+        <div class="d-flex gap-2">
+          <a href="#" class="text-light fs-4"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-light fs-4"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-light fs-4"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-light fs-4"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <hr class="mt-4 border-secondary">
+    
+    <!-- Footer Bottom -->
+    <div class="row">
+      <div class="col text-center">
+        <p class="mb-0">&copy; 2025 EATWITJAY. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
 
 
 
-
-   <!-- JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-  <script>
-    $(".hero-carousel").owlCarousel({
-  items: 1,
-  loop: true,
-  autoplay: true,
-  autoplayTimeout: 4000,
-  autoplayHoverPause: true,
-  nav: true,
-  dots: true,
-  navText: ["<i class='fas fa-chevron-left'></i>", "<i class='fas fa-chevron-right'></i>"]
-});
-
-  </script>
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
